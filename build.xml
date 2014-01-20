@@ -30,7 +30,7 @@
     <target name="run-test" depends="compile-test">
         <java classname="org.junit.runner.JUnitCore"
               classpath="${testClasses.dir};${testLib.dir}/junit-4.10.jar;${classes.dir}">
-            <arg value="sample.sampleTest"/>
+            <arg value="lib.SampleMethodTest"/>
         </java>
     </target>
 
