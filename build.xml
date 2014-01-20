@@ -15,6 +15,7 @@
         <mkdir dir="${testLib.dir}"/>
         <copy file="externalLib/junit-4.10.jar" todir="${testLib.dir}"/>
         <mkdir dir="${externalLib.dir}"/>
+        <mkdir dir="${artifacts.dir}"/>
     </target>
 
     <target name="compile" depends="init">
@@ -34,12 +35,22 @@
     </target>
 
     <target name="create-jar" depends="run-test">
-        <mkdir dir="${artifacts.dir}"/>
         <jar destfile="${artifacts.dir}/expression-evaluator.jar" basedir="${classes.dir}"/>
     </target>
 
     <target name="init-dist" depends="create-jar">
-        <mkdir dir="${artifacts.dir}/dist"/>
+        <mkdir dir="${distribution.dir}"/>
+        <mkdir dir="${bin.dir}"/>
+        <mkdir dir="${distLib.dir}"/>
+        <copy file="${artifacts.dir}/expression-evaluator.jar" todir="${distLib.dir}"/>
+        <copy file="README.md" todir="${distribution.dir}"/>
+        <copy todir="${bin.dir}">
+            <fileset dir="shellScripts" />
+        </copy>
+    </target>
+
+    <target name="create-zip" depends="init-dist">
+        <zip destfile="${artifacts.dir}/expression-evaluator.zip" basedir="${distribution.dir}"/>
     </target>
 
 </project>
