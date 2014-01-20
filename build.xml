@@ -1,0 +1,45 @@
+<project name="expression-evaluator">
+
+    <property file="build.properties"/>
+
+    <target name="clean">
+        <delete dir="build"/>
+    </target>
+
+    <target name="init">
+        <mkdir dir="${build.dir}"/>
+        <mkdir dir="${classes.dir}"/>
+        <mkdir dir="${testClasses.dir}"/>
+        <mkdir dir="${mainLib.dir}"/>
+        <mkdir dir="${lib.dir}"/>
+        <mkdir dir="${testLib.dir}"/>
+        <copy file="externalLib/junit-4.10.jar" todir="${testLib.dir}"/>
+        <mkdir dir="${externalLib.dir}"/>
+    </target>
+
+    <target name="compile" depends="init">
+        <javac srcdir="${src.dir}" destdir="${classes.dir}" includeantruntime="false"/>
+    </target>
+
+    <target name="compile-test" depends="compile">
+        <javac srcdir="${test.dir}" destdir="${testClasses.dir}"
+               classpath="${testLib.dir}/junit-4.10.jar;${classes.dir}" includeantruntime="false"/>
+    </target>
+
+    <target name="run-test" depends="compile-test">
+        <java classname="org.junit.runner.JUnitCore"
+              classpath="${testClasses.dir};${testLib.dir}/junit-4.10.jar;${classes.dir}">
+            <arg value="sample.sampleTest"/>
+        </java>
+    </target>
+
+    <target name="create-jar" depends="run-test">
+        <mkdir dir="${artifacts.dir}"/>
+        <jar destfile="${artifacts.dir}/expression-evaluator.jar" basedir="${classes.dir}"/>
+    </target>
+
+    <target name="init-dist" depends="create-jar">
+        <mkdir dir="${artifacts.dir}/dist"/>
+    </target>
+
+</project>

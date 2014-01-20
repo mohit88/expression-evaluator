@@ -1,0 +1,1 @@
+java -cp $expression-evaluator/lib/ main.SampleMain
