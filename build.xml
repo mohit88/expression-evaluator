@@ -28,14 +28,24 @@
     </target>
 
     <target name="run-test" depends="compile-test">
-        <java classname="org.junit.runner.JUnitCore"
-              classpath="${testClasses.dir};${testLib.dir}/junit-4.10.jar;${classes.dir}">
-            <arg value="lib.SampleMethodTest"/>
-        </java>
+        <junit haltonfailure="yes">
+            <classpath>
+                <pathelement location="${classes.dir}" />
+                <pathelement location="${testClasses.dir}" />
+                <pathelement location="${testLib.dir}/junit-4.10.jar"/>
+            </classpath>
+            <batchtest>
+                <fileset dir="${test.dir}">
+                    <include name="**/*Test*" />
+                </fileset>
+            </batchtest>
+            <formatter type = "brief" usefile = "false"/>
+        </junit>
     </target>
 
     <target name="create-jar" depends="run-test">
         <jar destfile="${artifacts.dir}/expression-evaluator.jar" basedir="${classes.dir}"/>
+
     </target>
 
     <target name="init-dist" depends="create-jar">
@@ -52,5 +62,7 @@
     <target name="create-zip" depends="init-dist">
         <zip destfile="${artifacts.dir}/expression-evaluator.zip" basedir="${distribution.dir}"/>
     </target>
+
+
 
 </project>
