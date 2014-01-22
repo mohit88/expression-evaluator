@@ -39,7 +39,17 @@ public class EvaluatorLibTest {
     @Test
     public void testEvaluateDivisionOfPositiveTwoOperands() throws Exception {
         String expression = "10/5";
-        String expected = "2";
+        String expected = "2.0";
+
+        String actual = new EvaluatorLib().evaluate(expression);
+
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testEvaluateExponentialOfTwoPositiveOperands() throws Exception {
+        String expression = "10^2";
+        String expected = "100";
 
         String actual = new EvaluatorLib().evaluate(expression);
 

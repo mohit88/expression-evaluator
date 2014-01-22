@@ -4,40 +4,47 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class EvaluatorLib {
-    private String addTwoNumbers(String firstNo ,String secondNo){
-        Integer result = Integer.parseInt(firstNo) + Integer.parseInt(secondNo);
-        return result.toString();
+    private int addTwoNumbers(int firstNo ,int secondNo){
+        Integer result = firstNo + secondNo;
+        return result;
     }
-    private String subtractTwoNumbers(String firstNo ,String secondNo){
-        Integer result = Integer.parseInt(firstNo) - Integer.parseInt(secondNo);
-        return result.toString();
+    private int subtractTwoNumbers(int firstNo ,int secondNo){
+        Integer result = firstNo - secondNo;
+        return result;
     }
-
-    private String multiplyTwoNumbers(String firstNo ,String secondNo){
-        Integer result = Integer.parseInt(firstNo) * Integer.parseInt(secondNo);
-        return result.toString();
+    private int multiplyTwoNumbers(int firstNo ,int secondNo){
+        Integer result = firstNo * secondNo;
+        return result;
     }
-
-    private String divideNumbersByAnotherNumber(String firstNo ,String secondNo){
-        Integer result = Integer.parseInt(firstNo) / Integer.parseInt(secondNo);
-        return result.toString();
+    private double getQuotient(int firstNo, int secondNo){
+        Integer result = firstNo / secondNo;
+        return result;
     }
-
+    private int getExponential(int firstNo ,int secondNo){
+        double result = Math.pow(firstNo, secondNo);
+        return (int) result;
+    }
 
     public String evaluate(String expression){
-        String[] listOfNos = expression.split("[+*/-]");
+        String[] listOfNos = expression.split("[+*/^-]");
         String[] listOfOperators = expression.split("\\d+");
+
+        int firstNo = Integer.parseInt(listOfNos[0]);
+        int secondNo = Integer.parseInt(listOfNos[1]);
+        String operator = listOfOperators[1];
 
         String output = "";
 
-        if(listOfOperators[1].equals("+"))
-            output = addTwoNumbers(listOfNos[0], listOfNos[1]);
-        if(listOfOperators[1].equals("-"))
-            output = subtractTwoNumbers(listOfNos[0], listOfNos[1]);
-        if(listOfOperators[1].equals("*"))
-            output = multiplyTwoNumbers(listOfNos[0], listOfNos[1]);
-        if(listOfOperators[1].equals("/"))
-            output = divideNumbersByAnotherNumber(listOfNos[0], listOfNos[1]);
+        if(operator.equals("+"))
+            output = String.valueOf(addTwoNumbers(firstNo, secondNo));
+        if(operator.equals("-"))
+            output = String.valueOf(subtractTwoNumbers(firstNo, secondNo));
+        if(operator.equals("*"))
+            output = String.valueOf(multiplyTwoNumbers(firstNo, secondNo));
+        if(operator.equals("/"))
+            output = String.valueOf(getQuotient(firstNo, secondNo));
+        if(operator.equals("^"))
+            output = String.valueOf(getExponential(firstNo, secondNo));
 
         return output;
     }
