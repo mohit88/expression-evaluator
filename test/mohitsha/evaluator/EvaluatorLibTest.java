@@ -36,4 +36,14 @@ public class EvaluatorLibTest {
         Assert.assertEquals(expected, actual);
     }
 
+    @Test
+    public void testEvaluateDivisionOfPositiveTwoOperands() throws Exception {
+        String expression = "10/5";
+        String expected = "2";
+
+        String actual = new EvaluatorLib().evaluate(expression);
+
+        Assert.assertEquals(expected, actual);
+    }
+
 }

@@ -18,10 +18,14 @@ public class EvaluatorLib {
         return result.toString();
     }
 
+    private String divideNumbersByAnotherNumber(String firstNo ,String secondNo){
+        Integer result = Integer.parseInt(firstNo) / Integer.parseInt(secondNo);
+        return result.toString();
+    }
 
 
     public String evaluate(String expression){
-        String[] listOfNos = expression.split("[+*-]");
+        String[] listOfNos = expression.split("[+*/-]");
         String[] listOfOperators = expression.split("\\d+");
 
         String output = "";
@@ -32,6 +36,8 @@ public class EvaluatorLib {
             output = subtractTwoNumbers(listOfNos[0], listOfNos[1]);
         if(listOfOperators[1].equals("*"))
             output = multiplyTwoNumbers(listOfNos[0], listOfNos[1]);
+        if(listOfOperators[1].equals("/"))
+            output = divideNumbersByAnotherNumber(listOfNos[0], listOfNos[1]);
 
         return output;
     }
