@@ -1,24 +1,17 @@
 package mohitsha.evaluator;
 
-import java.util.LinkedList;
-import java.util.List;
-
 public class EvaluatorLib {
     private int addTwoNumbers(int firstNo ,int secondNo){
-        Integer result = firstNo + secondNo;
-        return result;
+        return firstNo + secondNo;
     }
     private int subtractTwoNumbers(int firstNo ,int secondNo){
-        Integer result = firstNo - secondNo;
-        return result;
+        return firstNo - secondNo;
     }
     private int multiplyTwoNumbers(int firstNo ,int secondNo){
-        Integer result = firstNo * secondNo;
-        return result;
+        return firstNo * secondNo;
     }
     private double getQuotient(int firstNo, int secondNo){
-        Integer result = firstNo / secondNo;
-        return result;
+        return firstNo / secondNo;
     }
     private int getExponential(int firstNo ,int secondNo){
         double result = Math.pow(firstNo, secondNo);
