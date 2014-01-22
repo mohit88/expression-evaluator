@@ -1,0 +1,22 @@
+## Acceptance Criteria
+
+Expression must have
+
+* Two non negative integer operands.
+* One operator of (‘+’, ‘-’, ‘*’, ‘/’, ‘^’).
+
+Expression must not have
+
+* Spaces in between expression.
+* Brackets.
+* Decimal operands.
+
+For example :- “4+5” , “2*3”, “10/5”, “5-2” , “2^2”
+
+How the problem can be solved?
+Steps 									[Estimated Time :- 40 min]
+Take input expression. (input expression :- “4+5”)
+The expression will be separated with operators like (‘+’, ‘-’, ‘*’, ‘/’, ‘^’) and get a list of numbers. (list of number :- [“4”, “5”])					time :- 10 min
+Separate the expression with number to get a list of operators. (list of operator :- [“+”])
+											time :- 10 min
+Take two numbers from list of numbers and evaluate on the basis of operator. (answer :- “9”)										time :- 20 min
