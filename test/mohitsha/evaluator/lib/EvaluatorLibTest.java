@@ -134,4 +134,34 @@ public class EvaluatorLibTest {
         Assert.assertEquals(expected, actual);
     }
 
+    @Test
+    public void testEvaluateExpressionWithMultipleOperatorsOfAdditionAndSubtraction() throws Exception {
+        String expression = "4-5-6+12-5";
+        String expected = "0";
+
+        String actual = new EvaluatorLib().evaluate(expression);
+
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testEvaluateExpressionWithSpacesAndMultipleOperatorsOfAdditionAndSubtraction() throws Exception {
+        String expression = "4 - 5 -  6 + 12 - 5";
+        String expected = "0";
+
+        String actual = new EvaluatorLib().evaluate(expression);
+
+        Assert.assertEquals(expected, actual);
+    }
+
+
+    @Test
+    public void testEvaluateExpressionWithDecimalOperandsAndSpacesAndMultipleOperatorsOfMultipleAndDivision() throws Exception {
+        String expression = "4 - 5.5 + 12 * 10";
+        String expected = "105";
+
+        String actual = new EvaluatorLib().evaluate(expression);
+
+        Assert.assertEquals(expected, actual);
+    }
 }
