@@ -164,4 +164,15 @@ public class EvaluatorLibTest {
 
         Assert.assertEquals(expected, actual);
     }
+
+    @Test
+    public void testEvaluateExpressionWithSingleRoundBrackets() throws Exception {
+        String expression = "4 - 5.5 +( 12 * 10 )";
+        String expected = "118.5";
+
+        String actual = new EvaluatorLib().evaluate(expression);
+
+        Assert.assertEquals(expected, actual);
+    }
+
 }
