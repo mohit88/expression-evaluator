@@ -1,12 +1,11 @@
 package mohitsha.evaluator.lib;
 
-import java.beans.Expression;
-
 public class EvaluatorLib {
 
     public String evaluate(String expression){
 
         expression = expression.replaceAll("\\s","");
+
         String[] listOfNos = expression.split("[+*/^-]");
         String[] listOfOperators = expression.split("[.0-9]+");
 

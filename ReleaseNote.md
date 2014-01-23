@@ -1,5 +1,12 @@
 ## Expression Evaluator Release Note
 
+### Release 0.3
+    * This release supports expression with spaces in between.
+    * Example :-
+                "4.7 + 5.23"
+                "6 - 7"
+    * Known bug if spaces is given in between two numbers it considers it as one number.
+
 
 ### Release 0.2
     * This release supports expression with decimal operands.

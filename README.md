@@ -1,6 +1,7 @@
 Expression Evaluator
 ====================
-    Expression Evaluator will take an expression as input and it will give result by evaluating the expression.
+    Expression Evaluator will take an expression as input
+    It will give result by evaluating the expression.
 
 ### Usage
     sh mp_exp_eval.sh "expression"
