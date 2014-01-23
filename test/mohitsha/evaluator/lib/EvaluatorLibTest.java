@@ -13,6 +13,7 @@ public class EvaluatorLibTest {
 
         Assert.assertEquals(expected, actual);
     }
+
     @Test
     public void testEvaluateSubtractionOfPositiveTwoOperands() throws Exception {
         String expression = "8-5";
@@ -103,4 +104,23 @@ public class EvaluatorLibTest {
         Assert.assertEquals(expected, actual);
     }
 
+    @Test
+    public void testEvaluateSimpleExpressionWithSpaces() throws Exception {
+        String expression = " 4 + 5 ";
+        String expected = "9";
+
+        String actual = new EvaluatorLib().evaluate(expression);
+
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testCannotEvaluateExpressionWithSpacesInBetweenTwoDigits() throws Exception {
+        String expression = " 4 9 + 5 ";
+        String expected = "";
+
+        String actual = new EvaluatorLib().evaluate(expression);
+
+        Assert.assertEquals(expected, actual);
+    }
 }

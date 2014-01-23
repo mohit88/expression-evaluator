@@ -1,11 +1,12 @@
 package mohitsha.evaluator.lib;
 
+import java.beans.Expression;
+
 public class EvaluatorLib {
 
     public String evaluate(String expression){
 
-        Operations op = new Operations();
-
+        expression = expression.replaceAll("\\s","");
         String[] listOfNos = expression.split("[+*/^-]");
         String[] listOfOperators = expression.split("[.0-9]+");
 
@@ -16,16 +17,7 @@ public class EvaluatorLib {
 
         String output = "";
 
-        if(operator.equals("+"))
-            output = String.valueOf(op.addTwoNumbers(firstNo, secondNo));
-        if(operator.equals("-"))
-            output = String.valueOf(op.subtractTwoNumbers(firstNo, secondNo));
-        if(operator.equals("*"))
-            output = String.valueOf(op.multiplyTwoNumbers(firstNo, secondNo));
-        if(operator.equals("/"))
-            output = String.valueOf(op.getQuotient(firstNo, secondNo));
-        if(operator.equals("^"))
-            output = String.valueOf(op.getExponential(firstNo, secondNo));
+        output = String.valueOf(new Operations().decideOperation(operator,firstNo,secondNo));
 
         return output.replaceAll("\\.0$","");
     }
