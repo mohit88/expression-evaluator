@@ -84,9 +84,19 @@ public class EvaluatorLibTest {
     }
 
     @Test
-    public void testDivissionOfTwoPositiveDecimalOperands() throws Exception {
+    public void testDivisionOfTwoPositiveDecimalOperands() throws Exception {
         String expression = "10/2.5";
         String expected = "4";
+
+        String actual = new EvaluatorLib().evaluate(expression);
+
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testExponentialOfTwoPositiveDecimalOperands() throws Exception {
+        String expression = "0.2^1";
+        String expected = "0.2";
 
         String actual = new EvaluatorLib().evaluate(expression);
 

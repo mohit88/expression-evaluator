@@ -6,7 +6,6 @@ public class Operations {
         return firstNo + secondNo;
     }
 
-
     protected double subtractTwoNumbers(double firstNo, double secondNo){
         return firstNo - secondNo;
     }
@@ -20,8 +19,8 @@ public class Operations {
         return output;
     }
 
-    protected long getExponential(double firstNo, double secondNo){
-        long result = (long) Math.pow(firstNo, secondNo);
+    protected double getExponential(double firstNo, double secondNo){
+        double result = Math.pow(firstNo, secondNo);
         return  result;
     }
 

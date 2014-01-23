@@ -1,16 +1,17 @@
 Expression Evaluator
 ====================
 
-## How to Install
+### How to Install
 
-* Download zip
+* Download `expression_evaluator.zip`.
+* Unzip the `expression_evaluator.zip`.
 * Create environment variable `EVALUATOR_HOME="path of expression_evaluator"`
-* Update environment variable PATH with `%EVALUATOR_HOME%/bin`
+* Update environment variable `PATH` with `%EVALUATOR_HOME%/bin`
 
-## Usage
+### Usage
 
-    sh MP_EXP_EVAL.sh "expression"
+    sh mp_exp_eval.sh "expression"
 
-	Example :- sh MP_EXP_EVAL.sh "4+6"
+	Example :- sh mp_exp_eval.sh "4+6"
 
 
