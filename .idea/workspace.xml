@@ -71,7 +71,7 @@
       <file leaf-file-name="EvaluatorLibTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/mohitsha/evaluator/lib/EvaluatorLibTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="115" column="0" selection-start="3213" selection-end="3213" vertical-scroll-proportion="0.0" vertical-offset="1649" max-vertical-offset="2074">
+            <state line="135" column="0" selection-start="3798" selection-end="3798" vertical-scroll-proportion="0.0" vertical-offset="1904" max-vertical-offset="2431">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -79,10 +79,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EvaluatorLib.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="EvaluatorLib.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/mohitsha/evaluator/lib/EvaluatorLib.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="164" selection-end="164" vertical-scroll-proportion="0.28" vertical-offset="0" max-vertical-offset="476">
+            <state line="11" column="0" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="867">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#241#249#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/build.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="35" selection-start="226" selection-end="226" vertical-scroll-proportion="0.32" vertical-offset="17" max-vertical-offset="1241">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="28" selection-start="328" selection-end="328" vertical-scroll-proportion="0.0" vertical-offset="99" max-vertical-offset="544">
               <folding />
             </state>
           </provider>
@@ -113,8 +134,6 @@
         <option value="$PROJECT_DIR$/src/SampleMethod.java" />
         <option value="$PROJECT_DIR$/src/lib/SampleMethod.java" />
         <option value="$PROJECT_DIR$/src/main/SampleMain.java" />
-        <option value="$PROJECT_DIR$/build.properties" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/test/SampleMethodTest.java" />
         <option value="$PROJECT_DIR$/test/lib/SampleMethodTest.java" />
         <option value="$PROJECT_DIR$/src/mohitsha/evaluator/lib.java" />
@@ -130,10 +149,12 @@
         <option value="$PROJECT_DIR$/build/artifacts/dist/ReleaseNote.md" />
         <option value="$PROJECT_DIR$/src/mohitsha/evaluator/lib/Operations.java" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/test/mohitsha/evaluator/lib/EvaluatorLibTest.java" />
-        <option value="$PROJECT_DIR$/build.xml" />
-        <option value="$PROJECT_DIR$/src/mohitsha/evaluator/lib/EvaluatorLib.java" />
         <option value="$PROJECT_DIR$/ReleaseNote.md" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/mohitsha/evaluator/lib/EvaluatorLib.java" />
+        <option value="$PROJECT_DIR$/test/mohitsha/evaluator/lib/EvaluatorLibTest.java" />
+        <option value="$PROJECT_DIR$/build.properties" />
+        <option value="$PROJECT_DIR$/build.xml" />
       </list>
     </option>
   </component>
@@ -233,7 +254,35 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="shellScripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="expression-evaluator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="expression-evaluator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="externalLib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="expression-evaluator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="expression-evaluator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -297,50 +346,6 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="EvaluatorLibTest.testMultiplicationOfTwoPositiveDecimalOperands" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="expression-evaluator" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="mohitsha.evaluator.lib" />
-      <option name="MAIN_CLASS_NAME" value="mohitsha.evaluator.lib.EvaluatorLibTest" />
-      <option name="METHOD_NAME" value="testMultiplicationOfTwoPositiveDecimalOperands" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="EvaluatorLibTest.testDivissionOfTwoPositiveDecimalOperands" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="expression-evaluator" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="mohitsha.evaluator.lib" />
-      <option name="MAIN_CLASS_NAME" value="mohitsha.evaluator.lib.EvaluatorLibTest" />
-      <option name="METHOD_NAME" value="testDivissionOfTwoPositiveDecimalOperands" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
     <configuration default="false" name="EvaluatorLibTest.testExponentialOfTwoPositiveDecimalOperands" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="expression-evaluator" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -370,6 +375,50 @@
       <option name="PACKAGE_NAME" value="mohitsha.evaluator.lib" />
       <option name="MAIN_CLASS_NAME" value="mohitsha.evaluator.lib.EvaluatorLibTest" />
       <option name="METHOD_NAME" value="testEvaluateSimpleExpressionWithSpaces" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="EvaluatorLibTest.testEvaluateSimpleAdditionOfPositiveTwoOperands" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="expression-evaluator" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="mohitsha.evaluator.lib" />
+      <option name="MAIN_CLASS_NAME" value="mohitsha.evaluator.lib.EvaluatorLibTest" />
+      <option name="METHOD_NAME" value="testEvaluateSimpleAdditionOfPositiveTwoOperands" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="EvaluatorLibTest.testEvaluateExpressionWithMultipleOperators" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="expression-evaluator" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="mohitsha.evaluator.lib" />
+      <option name="MAIN_CLASS_NAME" value="mohitsha.evaluator.lib.EvaluatorLibTest" />
+      <option name="METHOD_NAME" value="testEvaluateExpressionWithMultipleOperators" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -525,18 +574,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.EvaluatorLibTest (1)" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.EvaluatorLibTest.testMultiplicationOfTwoPositiveDecimalOperands" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.EvaluatorLibTest.testDivissionOfTwoPositiveDecimalOperands" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.EvaluatorLibTest.testExponentialOfTwoPositiveDecimalOperands" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.EvaluatorLibTest.testEvaluateSimpleExpressionWithSpaces" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.EvaluatorLibTest.testExponentialOfTwoPositiveDecimalOperands" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.EvaluatorLibTest.testEvaluateSimpleExpressionWithSpaces" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.EvaluatorLibTest.testEvaluateSimpleAdditionOfPositiveTwoOperands" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.EvaluatorLibTest.testEvaluateExpressionWithMultipleOperators" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.EvaluatorLibTest (1)" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.EvaluatorLibTest.testEvaluateSimpleExpressionWithSpaces" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.EvaluatorLibTest.testExponentialOfTwoPositiveDecimalOperands" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.EvaluatorLibTest.testDivissionOfTwoPositiveDecimalOperands" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.EvaluatorLibTest.testMultiplicationOfTwoPositiveDecimalOperands" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.EvaluatorLibTest.testEvaluateExpressionWithMultipleOperators" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.EvaluatorLibTest.testEvaluateSimpleAdditionOfPositiveTwoOperands" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.EvaluatorLibTest.testEvaluateSimpleExpressionWithSpaces" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.EvaluatorLibTest.testExponentialOfTwoPositiveDecimalOperands" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -600,7 +649,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="779" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -619,7 +668,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32986626" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -753,20 +802,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="261" selection-end="261" vertical-scroll-proportion="0.44667697" vertical-offset="0" max-vertical-offset="647">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="5" selection-start="13" selection-end="13" vertical-scroll-proportion="0.04" vertical-offset="0" max-vertical-offset="425">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="17" selection-start="32" selection-end="32" vertical-scroll-proportion="0.04" vertical-offset="0" max-vertical-offset="425">
@@ -788,22 +823,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shellScripts/mp_exp_eval.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="58" selection-start="58" selection-end="58" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="102">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mohitsha/evaluator/lib/Operations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="0" selection-start="1444" selection-end="1444" vertical-scroll-proportion="0.68" vertical-offset="34" max-vertical-offset="493">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
@@ -811,15 +830,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="0" selection-start="154" selection-end="154" vertical-scroll-proportion="0.17" vertical-offset="0" max-vertical-offset="408">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/mohitsha/evaluator/lib/EvaluatorLibTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="115" column="0" selection-start="3213" selection-end="3213" vertical-scroll-proportion="0.0" vertical-offset="1649" max-vertical-offset="2074">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -833,16 +843,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.xml">
+    <entry file="file://$PROJECT_DIR$/src/mohitsha/evaluator/lib/Operations.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="64" selection-start="2294" selection-end="2294" vertical-scroll-proportion="0.6" vertical-offset="816" max-vertical-offset="1241">
+        <state line="45" column="0" selection-start="1445" selection-end="1445" vertical-scroll-proportion="0.64" vertical-offset="68" max-vertical-offset="493">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="24" selection-start="44" selection-end="44" vertical-scroll-proportion="0.12" vertical-offset="0" max-vertical-offset="425">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shellScripts/mp_exp_eval.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="58" selection-start="58" selection-end="58" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="102">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/mohitsha/evaluator/lib/EvaluatorLibTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="135" column="0" selection-start="3798" selection-end="3798" vertical-scroll-proportion="0.0" vertical-offset="1904" max-vertical-offset="2431">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/mohitsha/evaluator/lib/EvaluatorLib.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="164" selection-end="164" vertical-scroll-proportion="0.28" vertical-offset="0" max-vertical-offset="476">
+        <state line="11" column="0" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="867">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#241#249#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="28" selection-start="328" selection-end="328" vertical-scroll-proportion="0.0" vertical-offset="99" max-vertical-offset="544">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="35" selection-start="226" selection-end="226" vertical-scroll-proportion="0.32" vertical-offset="17" max-vertical-offset="1241">
           <folding />
         </state>
       </provider>

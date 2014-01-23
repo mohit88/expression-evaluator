@@ -113,4 +113,25 @@ public class EvaluatorLibTest {
 
         Assert.assertEquals(expected, actual);
     }
+
+    @Test
+    public void testEvaluateExpressionWithMultipleOperatorsOfAddition() throws Exception {
+        String expression = "4+5+6";
+        String expected = "15";
+
+        String actual = new EvaluatorLib().evaluate(expression);
+
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testEvaluateExpressionWithMultipleOperatorsOfSubtraction() throws Exception {
+        String expression = "4-5-6";
+        String expected = "-7";
+
+        String actual = new EvaluatorLib().evaluate(expression);
+
+        Assert.assertEquals(expected, actual);
+    }
+
 }
