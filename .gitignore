@@ -1,4 +1,4 @@
 *.class
 build
 .idea
-expression-evaluator.iml
+*.iml
