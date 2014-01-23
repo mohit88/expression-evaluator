@@ -54,14 +54,14 @@
         <mkdir dir="${distLib.dir}"/>
         <copy file="${artifacts.dir}/expression-evaluator.jar" todir="${distLib.dir}"/>
         <copy file="README.md" todir="${distribution.dir}"/>
-        <copy file="ReleaseNote.txt" todir="${distribution.dir}"/>
+        <copy file="ReleaseNote.md" todir="${distribution.dir}"/>
         <copy todir="${bin.dir}">
             <fileset dir="shellScripts" />
         </copy>
     </target>
 
     <target name="dist" depends="init-dist">
-        <zip destfile="${artifacts.dir}/expression-evaluator-0.1.zip" basedir="${distribution.dir}"/>
+        <zip destfile="${artifacts.dir}/expression-evaluator-0.2.zip" basedir="${distribution.dir}"/>
     </target>
 
 </project>

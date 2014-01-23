@@ -1,0 +1,19 @@
+## Expression Evaluator Release Note
+
+
+### Release 0.2
+    * This release supports expression with decimal operands.
+    * Example :-
+                "4.7+5.23"
+                "6.6-3.87"
+
+
+### Release 0.1
+    * This release supports expression with two operands and one operator.
+    * Only positive integer operands are allowed.
+    * Operators allowed are +, -, *, /, ^.
+    * Decimal operands are not allowed.
+    * Spaces and brackets must not be there in expression.
+    * Example :-
+                "4+5"
+                "6-3"

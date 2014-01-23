@@ -23,5 +23,4 @@ public class Operations {
         double result = Math.pow(firstNo, secondNo);
         return  result;
     }
-
 }
