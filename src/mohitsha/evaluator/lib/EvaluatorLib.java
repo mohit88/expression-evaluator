@@ -5,6 +5,7 @@ public class EvaluatorLib {
     public String evaluate(String expression){
 
         Operations op = new Operations();
+
         String[] listOfNos = expression.split("[+*/^-]");
         String[] listOfOperators = expression.split("[.0-9]+");
 

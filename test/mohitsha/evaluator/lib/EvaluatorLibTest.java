@@ -72,4 +72,25 @@ public class EvaluatorLibTest {
 
         Assert.assertEquals(expected, actual);
     }
+
+    @Test
+    public void testMultiplicationOfTwoPositiveDecimalOperands() throws Exception {
+        String expression = "2.3*10";
+        String expected = "23";
+
+        String actual = new EvaluatorLib().evaluate(expression);
+
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testDivissionOfTwoPositiveDecimalOperands() throws Exception {
+        String expression = "10/2.5";
+        String expected = "4";
+
+        String actual = new EvaluatorLib().evaluate(expression);
+
+        Assert.assertEquals(expected, actual);
+    }
+
 }
