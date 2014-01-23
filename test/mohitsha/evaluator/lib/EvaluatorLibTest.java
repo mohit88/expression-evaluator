@@ -1,11 +1,8 @@
-package mohitsha.evaluator;
+package mohitsha.evaluator.lib;
 
 import org.junit.Assert;
 import org.junit.Test;
 
-/**
- * Created by mohitsha on 1/22/14.
- */
 public class EvaluatorLibTest {
     @Test
     public void testEvaluateSimpleAdditionOfPositiveTwoOperands() throws Exception {
@@ -39,7 +36,7 @@ public class EvaluatorLibTest {
     @Test
     public void testEvaluateDivisionOfPositiveTwoOperands() throws Exception {
         String expression = "10/5";
-        String expected = "2.0";
+        String expected = "2";
 
         String actual = new EvaluatorLib().evaluate(expression);
 
@@ -56,4 +53,23 @@ public class EvaluatorLibTest {
         Assert.assertEquals(expected, actual);
     }
 
+    @Test
+    public void testEvaluateAdditionOfTwoPositiveDecimalOperands() throws Exception {
+        String expression = "10+2.3";
+        String expected = "12.3";
+
+        String actual = new EvaluatorLib().evaluate(expression);
+
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testEvaluateSubtractionOfTwoPositiveDecimalOperands() throws Exception {
+        String expression = "2.3-10";
+        String expected = "-7.7";
+
+        String actual = new EvaluatorLib().evaluate(expression);
+
+        Assert.assertEquals(expected, actual);
+    }
 }
