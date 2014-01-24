@@ -14,16 +14,16 @@ public class EvaluatorLib {
         return outputList;
     }
 
-    private String evalWholeExpression(List<String> listOfNos,List<String> listOfOperators){
+    private String evalExpressionWithMultipleOperators(List<String> listOfNos, List<String> listOfOperators){
 
         if(listOfNos.size() < 2) return listOfNos.get(0);
 
-        double firstNo = Double.parseDouble(listOfNos.get(0));
-        double secondNo = Double.parseDouble(listOfNos.get(1));
+        double firstNo = Double.parseDouble(listOfNos.get(0).trim());
+        double secondNo = Double.parseDouble(listOfNos.get(1).trim());
         listOfNos.remove(0);
         listOfNos.remove(0);
 
-        String operator = listOfOperators.get(1);
+        String operator = listOfOperators.get(1).trim();
         listOfOperators.remove(0);
 
         String output = "";
@@ -31,12 +31,10 @@ public class EvaluatorLib {
         output = String.valueOf(new Operations().decideOperation(operator,firstNo,secondNo));
 
         listOfNos.add(0, output.replaceAll("\\.0$", ""));
-        return evalWholeExpression(listOfNos, listOfOperators);
+        return evalExpressionWithMultipleOperators(listOfNos, listOfOperators);
     }
 
     public String evaluate(String expression){
-
-        expression = expression.replaceAll("\\s","");
 
         int beginIndex = expression.lastIndexOf('(');
         int endIndex = expression.indexOf(')', beginIndex);
@@ -50,6 +48,6 @@ public class EvaluatorLib {
         String[] listOfNos = expression.split("[+*/^-]");
         String[] listOfOperators = expression.split("[.0-9]+");
 
-        return evalWholeExpression(createList(listOfNos),createList(listOfOperators));
+        return evalExpressionWithMultipleOperators(createList(listOfNos), createList(listOfOperators));
     }
 }

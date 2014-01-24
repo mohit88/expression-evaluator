@@ -115,6 +115,17 @@ public class EvaluatorLibTest {
     }
 
     @Test
+    public void testEvaluateExpressionWithMultipleSpaces() throws Exception {
+        String expression = "   4   +    5    ";
+        String expected = "9";
+
+        String actual = new EvaluatorLib().evaluate(expression);
+
+        Assert.assertEquals(expected, actual);
+    }
+
+
+    @Test
     public void testEvaluateExpressionWithMultipleOperatorsOfAddition() throws Exception {
         String expression = "4+5+6";
         String expected = "15";
@@ -214,4 +225,3 @@ public class EvaluatorLibTest {
     }
 
 }
-
