@@ -236,8 +236,8 @@ public class EvaluatorLibTest {
 
     @Test
     public void testEvaluateExpressionWithNegativeNumberInBetween() throws Exception {
-        String expression = "- 5.5  + 12  ";
-        String expected = "6.5";
+        String expression = "- 5.5 + - 12  ";
+        String expected = "-17.5";
 
         String actual = new EvaluatorLib().evaluate(expression);
 

@@ -14,21 +14,25 @@ public class EvaluatorLib {
         return outputList;
     }
 
-    private String evalExpressionWithMultipleOperators(List<String> listOfNos, List<String> listOfOperators){
-
-        double firstNo ;
+    private double getCorrectNumber(List<String> listOfNos, List<String> listOfOperators) {
+        double number;
         if(listOfNos.get(0).trim().equals("")){
             listOfNos.remove(0);
-            firstNo = Double.parseDouble(listOfOperators.get(0).trim() + listOfNos.get(0).trim());
+            number = Double.parseDouble(listOfOperators.get(0).trim() + listOfNos.get(0).trim());
             listOfOperators.remove(0);
         }
-        else firstNo =  Double.parseDouble(listOfNos.get(0).trim());
+        else number =  Double.parseDouble(listOfNos.get(0).trim());
+        listOfNos.remove(0);
+        return number;
+    }
+
+    private String evalExpressionWithMultipleOperators(List<String> listOfNos, List<String> listOfOperators){
+
+        double firstNo = getCorrectNumber(listOfNos, listOfOperators);
 
         if(listOfOperators.size() == 0) return String.valueOf(firstNo).replaceAll("\\.0$", "");
 
-        listOfNos.remove(0);
-        double secondNo = Double.parseDouble(listOfNos.get(0).trim());
-        listOfNos.remove(0);
+        double secondNo = getCorrectNumber(listOfNos,listOfOperators);
 
         String operator = listOfOperators.get(0).trim();
         listOfOperators.remove(0);
