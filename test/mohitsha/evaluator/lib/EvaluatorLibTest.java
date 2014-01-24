@@ -244,4 +244,25 @@ public class EvaluatorLibTest {
         Assert.assertEquals(expected, actual);
     }
 
+    @Test
+    public void testEvaluateExpressionWithNegativeNumberInBrackets() throws Exception {
+        String expression = "- 5.5 + (- 12)  ";
+        String expected = "-17.5";
+
+        String actual = new EvaluatorLib().evaluate(expression);
+
+        Assert.assertEquals(expected, actual);
+    }
+
+
+    @Test
+    public void testEvaluateExpressionWithNegativeNumberAndMultipleOperators() throws Exception {
+        String expression = "- 5.5 + (- 12) - 2.5 - -20 ";
+        String expected = "0";
+
+        String actual = new EvaluatorLib().evaluate(expression);
+
+        Assert.assertEquals(expected, actual);
+    }
+
 }

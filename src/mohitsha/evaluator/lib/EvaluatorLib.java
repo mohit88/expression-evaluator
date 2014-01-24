@@ -16,6 +16,7 @@ public class EvaluatorLib {
 
     private double getCorrectNumber(List<String> listOfNos, List<String> listOfOperators) {
         double number;
+
         if(listOfNos.get(0).trim().equals("")){
             listOfNos.remove(0);
             number = Double.parseDouble(listOfOperators.get(0).trim() + listOfNos.get(0).trim());
