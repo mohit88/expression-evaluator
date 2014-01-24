@@ -224,16 +224,24 @@ public class EvaluatorLibTest {
         Assert.assertEquals(expected, actual);
     }
 
-
     @Test
-    public void testEvaluateimediateNumberAfterRoundBracket() throws Exception {
-        String expression = "( ( 5.5 )12 )";
-        String expected = "5.512";
+    public void testEvaluateExpressionWithNegativeNumberAtStart() throws Exception {
+        String expression = "- 5.5  + 12  ";
+        String expected = "6.5";
 
         String actual = new EvaluatorLib().evaluate(expression);
 
         Assert.assertEquals(expected, actual);
     }
 
+    @Test
+    public void testEvaluateExpressionWithNegativeNumberInBetween() throws Exception {
+        String expression = "- 5.5  + 12  ";
+        String expected = "6.5";
+
+        String actual = new EvaluatorLib().evaluate(expression);
+
+        Assert.assertEquals(expected, actual);
+    }
 
 }

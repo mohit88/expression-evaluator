@@ -16,14 +16,21 @@ public class EvaluatorLib {
 
     private String evalExpressionWithMultipleOperators(List<String> listOfNos, List<String> listOfOperators){
 
-        if(listOfNos.size() < 2) return String.valueOf(Double.parseDouble(listOfNos.get(0).trim()));
+        double firstNo ;
+        if(listOfNos.get(0).trim().equals("")){
+            listOfNos.remove(0);
+            firstNo = Double.parseDouble(listOfOperators.get(0).trim() + listOfNos.get(0).trim());
+            listOfOperators.remove(0);
+        }
+        else firstNo =  Double.parseDouble(listOfNos.get(0).trim());
 
-        double firstNo = Double.parseDouble(listOfNos.get(0).trim());
-        double secondNo = Double.parseDouble(listOfNos.get(1).trim());
+        if(listOfOperators.size() == 0) return String.valueOf(firstNo).replaceAll("\\.0$", "");
+
         listOfNos.remove(0);
+        double secondNo = Double.parseDouble(listOfNos.get(0).trim());
         listOfNos.remove(0);
 
-        String operator = listOfOperators.get(1).trim();
+        String operator = listOfOperators.get(0).trim();
         listOfOperators.remove(0);
 
         String output = "";
@@ -45,9 +52,14 @@ public class EvaluatorLib {
             return evaluate(expression.replace("(" + insideBrackets + ")", " " + bracketOutput + " "));
         }
 
-        String[] listOfNos = expression.split("[+*/^-]");
-        String[] listOfOperators = expression.split("[.0-9]+");
+        String[] collectionOfNumbers = expression.split("[+*/^-]");
+        String[] collectionOfOperators = expression.replaceAll("[.0-9\\s]+","").split("");
 
-        return evalExpressionWithMultipleOperators(createList(listOfNos), createList(listOfOperators));
+        List<String> listOfNos = createList(collectionOfNumbers);
+        List<String> listOfOperators = createList(collectionOfOperators);
+
+        listOfOperators.remove(0);
+
+        return evalExpressionWithMultipleOperators(listOfNos,listOfOperators);
     }
 }
