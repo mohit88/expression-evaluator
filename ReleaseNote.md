@@ -1,13 +1,20 @@
 ## Expression Evaluator Release Note
 
+### Release 0.6.1
+    * In this release bugs are fixed.
+    * Expression with some operator and negative number is fixed.
+    * Example :-
+              1.  "1*-1"
+              2.  "8^-2"
 
 ### Release 0.6
     * This release supports expression with negative numbers.
     * Example :-
                 "(-4.7 + 5.23) - (4 * -10)"
                 "(- 6 - - 7) / (-20 * - 30)"
-
-
+    * Bugs which are fixed
+        1. If space is given in between two numbers it considers it as one number.
+        2. Negative numbers are handled.
 
 
 ### Release 0.5
@@ -16,7 +23,7 @@
                 "(4.7 + 5.23) - (4 * 10)"
                 "(((6 - 7) / 20) * 30)"
     * Known bugs
-        1. if spaces is given in between two numbers it considers it as one number.
+        1. if spaces are given in between two numbers it considers it as one number.
         2. Negative numbers are not handled.
 
 ### Release 0.4

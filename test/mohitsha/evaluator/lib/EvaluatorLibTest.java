@@ -284,5 +284,4 @@ public class EvaluatorLibTest {
 
         Assert.assertEquals(expected, actual);
     }
-
 }
