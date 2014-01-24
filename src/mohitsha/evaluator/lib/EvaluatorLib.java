@@ -33,10 +33,11 @@ public class EvaluatorLib {
 
         if(listOfOperators.size() == 0) return String.valueOf(firstNo).replaceAll("\\.0$", "");
 
-        double secondNo = getCorrectNumber(listOfNos,listOfOperators);
-
         String operator = listOfOperators.get(0).trim();
         listOfOperators.remove(0);
+
+        double secondNo = getCorrectNumber(listOfNos,listOfOperators);
+
 
         String output = "";
 

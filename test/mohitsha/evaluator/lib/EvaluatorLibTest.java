@@ -265,4 +265,24 @@ public class EvaluatorLibTest {
         Assert.assertEquals(expected, actual);
     }
 
+    @Test
+    public void testEvaluateExpressionWithNegativeNumber() throws Exception {
+        String expression = "1*-1";
+        String expected = "-1";
+
+        String actual = new EvaluatorLib().evaluate(expression);
+
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testEvaluateExpressionWithMultiplicationOfNegativeNumber() throws Exception {
+        String expression = "-2*-3";
+        String expected = "6";
+
+        String actual = new EvaluatorLib().evaluate(expression);
+
+        Assert.assertEquals(expected, actual);
+    }
+
 }
