@@ -16,7 +16,7 @@ public class EvaluatorLib {
 
     private String evalExpressionWithMultipleOperators(List<String> listOfNos, List<String> listOfOperators){
 
-        if(listOfNos.size() < 2) return listOfNos.get(0);
+        if(listOfNos.size() < 2) return String.valueOf(Double.parseDouble(listOfNos.get(0).trim()));
 
         double firstNo = Double.parseDouble(listOfNos.get(0).trim());
         double secondNo = Double.parseDouble(listOfNos.get(1).trim());
@@ -42,7 +42,7 @@ public class EvaluatorLib {
         if(beginIndex < endIndex){
             String insideBrackets = expression.substring(beginIndex + 1, endIndex);
             String bracketOutput = evaluate(insideBrackets);
-            return evaluate(expression.replace("(" + insideBrackets + ")", bracketOutput));
+            return evaluate(expression.replace("(" + insideBrackets + ")", " " + bracketOutput + " "));
         }
 
         String[] listOfNos = expression.split("[+*/^-]");
