@@ -34,27 +34,22 @@ public class EvaluatorLib {
         return evalWholeExpression(listOfNos, listOfOperators);
     }
 
-    private String evalBracketExpression(String expression) {
-        int beginIndex = expression.indexOf('(') + 1;
-        int endIndex = expression.lastIndexOf(')');
-
-        String insideBrackets = expression.substring(beginIndex, endIndex);
-        String bracketOutput = evaluate(insideBrackets);
-
-        return expression.replace("(" + insideBrackets + ")", bracketOutput);
-    }
-
     public String evaluate(String expression){
 
         expression = expression.replaceAll("\\s","");
 
-        if(expression.indexOf('(') < expression.lastIndexOf(')'))
-            expression = evalBracketExpression(expression);
+        int beginIndex = expression.lastIndexOf('(');
+        int endIndex = expression.indexOf(')', beginIndex);
+
+        if(beginIndex < endIndex){
+            String insideBrackets = expression.substring(beginIndex + 1, endIndex);
+            String bracketOutput = evaluate(insideBrackets);
+            return evaluate(expression.replace("(" + insideBrackets + ")", bracketOutput));
+        }
 
         String[] listOfNos = expression.split("[+*/^-]");
         String[] listOfOperators = expression.split("[.0-9]+");
 
         return evalWholeExpression(createList(listOfNos),createList(listOfOperators));
     }
-
 }

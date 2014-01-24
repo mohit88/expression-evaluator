@@ -184,4 +184,34 @@ public class EvaluatorLibTest {
 
         Assert.assertEquals(expected, actual);
     }
+    @Test
+    public void testEvaluateExpressionWithMultipleRoundBrackets() throws Exception {
+        String expression = "(5.5 * 10) - (4 * 10 )";
+        String expected = "15";
+
+        String actual = new EvaluatorLib().evaluate(expression);
+
+        Assert.assertEquals(expected, actual);
+    }
+    @Test
+    public void testEvaluateExpressionWithMultipleNestedRoundBrackets() throws Exception {
+        String expression = "((((5.5) + 12) * 10 )-4)";
+        String expected = "171";
+
+        String actual = new EvaluatorLib().evaluate(expression);
+
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testEvaluateExpressionWithMultipleNestedAndMultipleRoundBrackets() throws Exception {
+        String expression = "( ( 5.5 ) + 12 ) * ( 10 * ( 5 - 4 ))";
+        String expected = "175";
+
+        String actual = new EvaluatorLib().evaluate(expression);
+
+        Assert.assertEquals(expected, actual);
+    }
+
 }
+
