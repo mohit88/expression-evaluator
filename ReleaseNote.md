@@ -1,6 +1,15 @@
 ## Expression Evaluator Release Note
 
 
+### Release 0.6
+    * This release supports expression with negative numbers.
+    * Example :-
+                "(-4.7 + 5.23) - (4 * -10)"
+                "(- 6 - - 7) / (-20 * - 30)"
+
+
+
+
 ### Release 0.5
     * This release supports expression with multiple brackets.
     * Example :-
@@ -9,7 +18,6 @@
     * Known bugs
         1. if spaces is given in between two numbers it considers it as one number.
         2. Negative numbers are not handled.
-
 
 ### Release 0.4
     * This release supports expression with multiple operators.

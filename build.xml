@@ -61,7 +61,7 @@
     </target>
 
     <target name="dist" depends="init-dist">
-        <zip destfile="${artifacts.dir}/expression-evaluator-0.5.zip" basedir="${distribution.dir}"/>
+        <zip destfile="${artifacts.dir}/expression-evaluator-0.6.zip" basedir="${distribution.dir}"/>
     </target>
 
 </project>
